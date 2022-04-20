@@ -1,0 +1,9 @@
+{
+  "extends": "eslint-config-redlotus-react/rules/tsconfig.json",
+  "include": ["src", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "baseUrl": "src"
+  }
+  // "references": [{ "path": "./tsconfig.node.json" }]
+}
