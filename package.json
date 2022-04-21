@@ -5,7 +5,10 @@
   "scripts": {
     "start": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky install",
+    "lint:fix": "eslint --fix --ext .js,.ts,.tsx ./src --ignore-path .gitignore",
+    "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\""
   },
   "dependencies": {
     "@emotion/react": "^11.9.0",
@@ -22,12 +25,28 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
-    "@vitejs/plugin-react": "^1.3.0",
+    "@types/react": "^18.0.5",
+    "@types/react-dom": "^18.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "@vitejs/plugin-react": "^1.3.1",
     "autoprefixer": "^10.4.4",
+    "eslint": "^8.13.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest-dom": "^4.0.1",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "eslint-plugin-storybook": "^0.5.10",
+    "eslint-plugin-tailwindcss": "^3.5.0",
+    "eslint-plugin-testing-library": "^5.3.1",
+    "husky": "^7.0.4",
     "i18next": "^21.6.16",
     "postcss": "^8.4.12",
+    "prettier": "^2.6.2",
     "react-i18next": "^11.16.7",
     "tailwind-scrollbar": "^1.3.1",
     "tailwindcss": "^3.0.24",

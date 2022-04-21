@@ -6,6 +6,12 @@ import eslintPlugin from "vite-plugin-eslint";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), VitePWA(), tsconfigPaths(), eslintPlugin()],
+  plugins: [
+    react(),
+    VitePWA(),
+    tsconfigPaths(),
+    eslintPlugin({ include: "src/**/*.{js,jsx,ts,tsx}" }),
+  ],
   publicDir: "assets",
 });
+// ./src/**/*.{js,jsx,ts,tsx}
