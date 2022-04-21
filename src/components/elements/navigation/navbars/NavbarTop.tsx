@@ -22,7 +22,7 @@ export const NavbarTop = ({ user }: Props) => {
           {user.avatar ? (
             <img className="w-5 h-5" alt="default pic" src={user.avatar} />
           ) : (
-            <img className="w-14 h-14" alt="user" src="/assets/general/avatar.svg" />
+            <img className="w-14 h-14" alt="user" src="/general/avatar.svg" />
           )}
         </div>
       </ScaleAnim>
