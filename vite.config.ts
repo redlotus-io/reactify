@@ -7,6 +7,8 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [react(), VitePWA(), tsconfigPaths()],
-
+  server: {
+    host: true,
+  },
   publicDir: "assets",
 });

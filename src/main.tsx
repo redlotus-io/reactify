@@ -5,7 +5,8 @@ import { BrowserRouter } from "react-router-dom";
 import { Router } from "routes";
 import "./index.css";
 
-const root = createRoot(document.getElementById("root") as Element);
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+const root = createRoot(document.getElementById("root")!);
 
 root.render(
   <BrowserRouter>
