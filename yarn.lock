@@ -1171,7 +1171,7 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
-"@rollup/pluginutils@^4.2.0", "@rollup/pluginutils@^4.2.1":
+"@rollup/pluginutils@^4.2.0":
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-4.2.1.tgz#e6c6c3aba0744edce3fb2074922d3776c0af2a6d"
   integrity sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ==
@@ -4066,14 +4066,6 @@ v8-compile-cache@^2.0.3:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz#2de19618c66dc247dcfb6f99338035d8245a2cee"
   integrity sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==
-
-vite-plugin-eslint@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/vite-plugin-eslint/-/vite-plugin-eslint-1.5.1.tgz#48cbadcdbe39ef09fbf6440d6fa4d87a3481a7f9"
-  integrity sha512-99KVbnB6C1AZN2okZq/VB+qDHuOmJDmBXu2eIQgIHI/Ry/EdTQlCEjcYpPbbqGi1+Fbxp3+G+O4sVLkhaVaE9w==
-  dependencies:
-    "@rollup/pluginutils" "^4.2.1"
-    rollup "^2.70.2"
 
 vite-plugin-pwa@^0.12.0:
   version "0.12.0"
