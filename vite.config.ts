@@ -19,8 +19,14 @@ export default defineConfig({
       workbox: {
         sourcemap: true,
       },
-      includeAssets: ["favicon.svg", "robots.txt"],
-      // includeAssets: ["favicon.svg", "favicon.ico", "robots.txt", "apple-touch-icon.png"],
+      includeAssets: [
+        "favicon.svg",
+        "robots.txt",
+        "favicon.ico",
+        "apple-touch-icon.png",
+        "android-chrome-192x192",
+        "android-chrome-512x512",
+      ],
       injectManifest: {},
       devOptions: {
         type: "module",
