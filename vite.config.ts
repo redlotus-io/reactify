@@ -39,20 +39,17 @@ export default defineConfig({
         orientation: "portrait",
         icons: [
           {
-            // src: "/icons/pwa-192x192.png",
-            src: "icons/favicon.svg",
+            src: "/icons/android-chrome-192x192",
             sizes: "192x192",
             type: "image/png",
           },
           {
-            // src: "/icons/pwa-512x512.png",
-            src: "/icons/favicon.svg",
+            src: "/icons/android-chrome-512x512",
             sizes: "512x512",
             type: "image/png",
           },
           {
-            // src: "/icons/pwa-512x512.png",
-            src: "icons/favicon.svg",
+            src: "/icons/android-chrome-512x512",
             sizes: "512x512",
             type: "image/png",
             purpose: "any maskable",
