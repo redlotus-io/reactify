@@ -27,7 +27,7 @@ export default defineConfig({
         "android-chrome-192x192",
         "android-chrome-512x512",
       ],
-      injectManifest: {},
+      // injectManifest: {},
       devOptions: {
         type: "module",
         enabled: true,
