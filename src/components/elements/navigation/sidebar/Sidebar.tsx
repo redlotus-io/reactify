@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { AnimatePresence, motion } from "framer-motion";
 import { ReactNode } from "react";
-import { HiChartBar, HiHome, HiX } from "react-icons/hi";
+import { HiChartBar, HiHome, HiX } from "react-icons/all";
 import { Link } from "react-router-dom";
 
 import { ScaleAndRotationAnim, ScaleAnim } from "components/elements";

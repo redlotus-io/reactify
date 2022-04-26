@@ -1,4 +1,4 @@
-import { HiChartBar, HiHome } from "react-icons/hi";
+import { HiChartBar, HiHome } from "react-icons/all";
 import { Link } from "react-router-dom";
 
 import { ScaleAnim } from "components/elements";
