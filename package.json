@@ -61,6 +61,8 @@
     "vite-plugin-pwa": "^0.12.0",
     "vite-tsconfig-paths": "^3.4.1",
     "vitest": "^0.10.0",
+    "workbox-routing": "^6.5.3",
+    "workbox-strategies": "^6.5.3",
     "workbox-window": "^6.5.3"
   }
 }

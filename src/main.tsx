@@ -6,7 +6,7 @@ import { Router } from "routes";
 import "./index.css";
 
 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-const root = createRoot(document.getElementById("root")!);
+const root = createRoot(document.getElementById("root") as HTMLElement);
 
 root.render(
   <BrowserRouter>
