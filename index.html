@@ -13,6 +13,12 @@
     <meta name="theme-color" content="#282c31" />
 
     <!-- <link rel="manifest" href="./src/manifest.json" /> -->
+
+    <script type="module">
+      // Register Service Worker using Vite Plugin PWA
+      import { registerSW } from "virtual:pwa-register";
+      registerSW();
+    </script>
   </head>
   <body>
     <div id="root"></div>
