@@ -12,25 +12,47 @@ export default defineConfig({
     react(),
     tsconfigPaths(),
     VitePWA({
-      includeAssets: ["favicon.svg", "favicon.ico", "robots.txt", "apple-touch-icon.png"],
+      srcDir: "src",
+      filename: "sw.ts",
+      strategies: "injectManifest",
+      registerType: "autoUpdate",
+      workbox: {
+        sourcemap: true,
+      },
+      includeAssets: ["favicon.svg", "robots.txt"],
+      // includeAssets: ["favicon.svg", "favicon.ico", "robots.txt", "apple-touch-icon.png"],
+      injectManifest: {},
+      devOptions: {
+        type: "module",
+        enabled: true,
+        /* other options */
+      },
       manifest: {
+        dir: "ltr",
+        start_url: "/",
+        lang: "English",
         name: "React Boilerplate",
-        short_name: "RB",
+        short_name: "React Boilerplate",
         description: "Boilerplate to get started fast",
         theme_color: "#282c31",
+        background_color: "#282c31",
+        orientation: "portrait",
         icons: [
           {
-            src: "pwa-192x192.png",
+            // src: "/icons/pwa-192x192.png",
+            src: "icons/favicon.svg",
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "pwa-512x512.png",
+            // src: "/icons/pwa-512x512.png",
+            src: "/icons/favicon.svg",
             sizes: "512x512",
             type: "image/png",
           },
           {
-            src: "pwa-512x512.png",
+            // src: "/icons/pwa-512x512.png",
+            src: "icons/favicon.svg",
             sizes: "512x512",
             type: "image/png",
             purpose: "any maskable",
@@ -42,7 +64,7 @@ export default defineConfig({
   server: {
     host: true,
   },
-  publicDir: "assets",
+  publicDir: "public",
   test: {
     globals: true,
     environment: "jsdom",
