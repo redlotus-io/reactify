@@ -42,9 +42,7 @@ export default defineConfig({
       //   /* other options */
       // },
       manifest: {
-        dir: "ltr",
         start_url: ".",
-        lang: "English",
         name: "React Boilerplate",
         short_name: "React Boilerplate",
         description: "Boilerplate to get started fast",
