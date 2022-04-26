@@ -12,7 +12,7 @@ export default defineConfig({
     react(),
     tsconfigPaths(),
     VitePWA({
-      mode: "development",
+      // mode: "development",
       srcDir: "src",
       filename: "sw.ts",
       strategies: "injectManifest",
