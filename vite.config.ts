@@ -14,22 +14,7 @@ export default defineConfig({
     tsconfigPaths(),
     checker({ typescript: true }),
     VitePWA({
-      // mode: "development",
-      srcDir: "src",
-      filename: "sw.ts",
-      strategies: "injectManifest",
       registerType: "autoUpdate",
-      workbox: {
-        sourcemap: true,
-        cleanupOutdatedCaches: true,
-        skipWaiting: true,
-        clientsClaim: true,
-      },
-      injectManifest: {
-        swSrc: "./src/sw.ts",
-        swDest: "./dist/sw.ts",
-      },
-      injectRegister: "inline",
       includeAssets: [
         "favicon.svg",
         "robots.txt",
@@ -38,11 +23,6 @@ export default defineConfig({
         "android-chrome-192x192",
         "android-chrome-512x512",
       ],
-      // devOptions: {
-      //   type: "module",
-      //   enabled: true,
-      //   /* other options */
-      // },
       manifest: {
         start_url: ".",
         name: "React Boilerplate",
