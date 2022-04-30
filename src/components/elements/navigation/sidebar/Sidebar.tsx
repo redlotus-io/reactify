@@ -13,8 +13,6 @@ interface Props {
 export const Sidebar = ({ placeMent = "right" }: Props) => {
   const { isSidebarOpen, setisSidebarOpen } = useSidebar();
 
-  console.log("isSidebarOpen", isSidebarOpen);
-
   return (
     <AnimatePresence initial exitBeforeEnter>
       {isSidebarOpen && (
