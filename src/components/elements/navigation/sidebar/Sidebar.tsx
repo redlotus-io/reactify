@@ -13,6 +13,8 @@ interface Props {
 export const Sidebar = ({ placeMent = "right" }: Props) => {
   const { isSidebarOpen, setisSidebarOpen } = useSidebar();
 
+  console.log("isSidebarOpen", isSidebarOpen);
+
   return (
     <AnimatePresence initial exitBeforeEnter>
       {isSidebarOpen && (
@@ -44,7 +46,7 @@ export const Sidebar = ({ placeMent = "right" }: Props) => {
             <div
               className={clsx("flex p-3", placeMent === "right" ? "justify-end" : "justify-end")}
             >
-              <button onClick={() => setisSidebarOpen(open => !open)}>
+              <button onClick={() => setisSidebarOpen(false)}>
                 <AnimationWrapper keyIndex="sidebar-x-icon" variants={animations.scaleAndRotation}>
                   <HiX className="w-12 h-12 fill-slate-700 hover:fill-slate-800" />
                 </AnimationWrapper>
