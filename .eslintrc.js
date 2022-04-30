@@ -31,6 +31,28 @@ module.exports = {
       {
         groups: ["builtin", "external", "internal", "parent", "sibling", "index", "object"],
         "newlines-between": "always",
+        pathGroups: [
+          {
+            pattern: "@headlessui/react",
+            group: "external",
+            position: "before",
+          },
+          {
+            pattern: "framer-motion",
+            group: "external",
+            position: "before",
+          },
+          {
+            pattern: "formik",
+            group: "external",
+            position: "before",
+          },
+          {
+            pattern: "components",
+            group: "internal",
+          },
+        ],
+        pathGroupsExcludedImportTypes: ["react"],
         alphabetize: { order: "asc", caseInsensitive: true },
       },
     ],

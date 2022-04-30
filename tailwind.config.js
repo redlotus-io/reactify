@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        min: "340px",
         xs: "460px",
         xs2: "500px",
         // sm: "640px",
@@ -14,5 +15,5 @@ module.exports = {
       sans: ["Rubik", "sans-serif"],
     },
   },
-  plugins: [require("tailwind-scrollbar")],
+  plugins: [require("tailwind-scrollbar"), require("tailwind-scrollbar-hide")],
 };

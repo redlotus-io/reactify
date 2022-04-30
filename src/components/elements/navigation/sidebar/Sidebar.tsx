@@ -1,43 +1,26 @@
+import { AnimatePresence } from "framer-motion";
+
 import clsx from "clsx";
-import { AnimatePresence, motion } from "framer-motion";
-import { ReactNode } from "react";
 import { HiChartBar, HiHome, HiX } from "react-icons/all";
-import { Link } from "react-router-dom";
 
-import { ScaleAndRotationAnim, ScaleAnim } from "components/elements";
-import { useSidebar } from "context/sidebar";
+import { animations, AnimationWrapper, SidebarLink } from "components";
+import { useSidebar } from "context";
 
-interface ListItemProps {
-  children: ReactNode;
-  to: string;
+interface Props {
+  placeMent: "left" | "right";
 }
 
-const ListItem = ({ children, to }: ListItemProps) => {
-  const { setisSidebarOpen } = useSidebar();
-  return (
-    <div role="button" tabIndex={-3} onClick={open => setisSidebarOpen(!open)}>
-      <Link to={to}>
-        <div className="flex items-center py-2 px-5 hover:bg-slate-100 cursor-pointer">
-          <ScaleAnim>
-            <div className="flex flex-row items-center">{children}</div>
-          </ScaleAnim>
-        </div>
-      </Link>
-    </div>
-  );
-};
-
-export const Sidebar = () => {
+export const Sidebar = ({ placeMent = "right" }: Props) => {
   const { isSidebarOpen, setisSidebarOpen } = useSidebar();
-  const listIconClasses = "mr-3 w-8 h-8 fill-gray-800";
 
   return (
     <AnimatePresence initial exitBeforeEnter>
       {isSidebarOpen && (
         <>
-          <motion.div
-            key="app-sidebar-content"
-            initial={{ x: "100vw", opacity: 0 }}
+          <AnimationWrapper
+            keyIndex="app-sidebar-content"
+            animateOnAllScreens
+            initial={{ x: placeMent === "right" ? "100vw" : "-100vw", opacity: 0 }}
             animate={{
               x: "0",
               opacity: 1,
@@ -49,33 +32,42 @@ export const Sidebar = () => {
               },
             }}
             exit={{
-              x: "100vw",
+              x: placeMent === "right" ? "100vw" : "-100vw",
               opacity: 0,
             }}
-            className="flex fixed top-0 right-0 z-[900] flex-col w-64 h-full bg-white"
+            className={clsx(
+              "flex fixed top-0 z-[900] flex-col w-64 h-full bg-white",
+              placeMent === "right" ? "right-0" : "left-0"
+            )}
           >
-            <div className="flex justify-end p-3">
+            {/* header */}
+            <div
+              className={clsx("flex p-3", placeMent === "right" ? "justify-end" : "justify-end")}
+            >
               <button onClick={() => setisSidebarOpen(open => !open)}>
-                <ScaleAndRotationAnim>
+                <AnimationWrapper keyIndex="sidebar-x-icon" variants={animations.scaleAndRotation}>
                   <HiX className="w-12 h-12 fill-slate-700 hover:fill-slate-800" />
-                </ScaleAndRotationAnim>
+                </AnimationWrapper>
               </button>
             </div>
+            {/* body */}
             <div className="h-full">
-              <ListItem to="/">
-                <HiHome className={clsx(listIconClasses)} />
+              <SidebarLink to="/">
+                <HiHome className="sidebar-link" />
                 <p className="text-xl font-medium">Home</p>
-              </ListItem>
+              </SidebarLink>
 
-              <ListItem to="/stats">
-                <HiChartBar className={clsx(listIconClasses)} />
+              <SidebarLink to="/stats">
+                <HiChartBar className="sidebar-link" />
                 <p className="text-xl font-medium">Stats</p>
-              </ListItem>
+              </SidebarLink>
             </div>
-          </motion.div>
+          </AnimationWrapper>
 
-          <motion.div
-            key="app-sidebar-overlay"
+          <AnimationWrapper
+            keyIndex="app-sidebar-overlay"
+            id="overlay"
+            animateOnAllScreens
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.5 }}
             transition={{ duration: 0.4, ease: "linear" }}

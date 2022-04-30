@@ -4,3 +4,8 @@ export interface UserType {
   username: string;
   avatar: string | null;
 }
+
+export interface SelectOption {
+  id: number;
+  name: string;
+}

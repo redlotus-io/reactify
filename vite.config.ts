@@ -52,10 +52,6 @@ export default defineConfig({
       },
     }),
   ],
-  server: {
-    host: true,
-  },
-  publicDir: "public",
   test: {
     globals: true,
     environment: "jsdom",
@@ -63,5 +59,9 @@ export default defineConfig({
     coverage: {
       reporter: ["text", "json", "html"],
     },
+  },
+  publicDir: "public",
+  server: {
+    host: true,
   },
 });
