@@ -42,4 +42,7 @@ input[type="number"] {
   .input-error {
     @apply border-2 border-red-300 caret-red-400 focus:outline-none focus:border-red-500;
   }
+  .gradient-border-example {
+    @apply border-4 border-transparent border-solid border-gradient-br-light-green-white;
+  }
 }
