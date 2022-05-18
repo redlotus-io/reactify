@@ -25,8 +25,8 @@ export default defineConfig({
       ],
       manifest: {
         start_url: ".",
-        name: "React Boilerplate",
-        short_name: "React Boilerplate",
+        name: "Reactify",
+        short_name: "Reactify",
         description: "Boilerplate to get started fast",
         theme_color: "#282c31",
         background_color: "#282c31",
