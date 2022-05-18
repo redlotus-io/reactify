@@ -5,7 +5,7 @@ import { animations, AnimationWrapper } from "components";
 
 export const NavbarBottom = () => {
   return (
-    <div className="flex fixed bottom-0 z-40 items-center py-2 m-2 w-[95%] h-fit bg-slate-50 rounded-md shadow-2xl">
+    <div className="fixed inset-x-0 bottom-0 z-40 py-2 my-2 mx-auto w-[95%] h-fit bg-slate-50 rounded-md shadow-2xl">
       <div className="flex flex-row justify-around w-full">
         <Link to="/">
           <AnimationWrapper
