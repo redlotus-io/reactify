@@ -1,6 +1,8 @@
 import clsx from "clsx";
 import React from "react";
 
+import { animations, AnimationWrapper } from "components";
+
 const sizes = {
   xs: "py-1 px-3 text-sm",
   sm: "py-2 px-6 text-sm",
@@ -47,26 +49,28 @@ export const Button = ({
   ...props
 }: ButtonProps) => {
   return (
-    <button
-      type={type}
-      className={clsx(
-        `m-0 font-medium tracking-wider text-center uppercase rounded-2xl transition-all duration-200 ease-in-out hover:scale-110 select-none`,
-        variants[variant],
-        sizes[size],
-        !isValid && "opacity-50 hover:scale-100 cursor-not-allowed",
-        className,
-        variant === "custom" && customColors
-      )}
-      {...props}
-    >
-      <p
+    <AnimationWrapper keyIndex="regular-button" variants={animations.button}>
+      <button
+        type={type}
         className={clsx(
-          variant !== "light" && "text-white",
-          customColors?.includes("white") && "text-gray-700"
+          `m-0 font-medium tracking-wider text-center uppercase rounded-2xl select-none`,
+          variants[variant],
+          sizes[size],
+          !isValid && "opacity-50 cursor-not-allowed",
+          className,
+          variant === "custom" && customColors
         )}
+        {...props}
       >
-        {children}
-      </p>
-    </button>
+        <p
+          className={clsx(
+            variant !== "light" && "text-white",
+            customColors?.includes("white") && "text-gray-700"
+          )}
+        >
+          {children}
+        </p>
+      </button>
+    </AnimationWrapper>
   );
 };
