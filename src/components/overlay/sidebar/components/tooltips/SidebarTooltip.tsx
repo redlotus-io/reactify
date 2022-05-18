@@ -9,7 +9,7 @@ export const SidebarTooltip = ({ tooltip }: Props) => {
     <span
       id="tooltip"
       className={clsx(
-        "absolute left-24 z-[997] p-2 text-sm font-bold text-white",
+        "absolute left-[5.5rem] z-[997] p-2 text-sm font-bold text-white",
         "bg-gray-800 rounded-md shadow-md transition-all duration-200 scale-0 origin-left",
         "tracking-wider lowercase group-hover:scale-100"
       )}
