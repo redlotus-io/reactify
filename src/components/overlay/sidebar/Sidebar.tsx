@@ -39,10 +39,9 @@ export const Sidebar = () => {
             <AnimationWrapper
               keyIndex="openWithOverlay-app-sidebar-content"
               animateOnAllScreens
-              initial={{ x: placement === "right" ? "40vw" : "-40vw", opacity: 0.4 }}
+              initial={{ x: placement === "right" ? "40vw" : "-40vw" }}
               animate={{
                 x: "0",
-                opacity: 1,
                 transition: {
                   type: "spring",
                   damping: 30,

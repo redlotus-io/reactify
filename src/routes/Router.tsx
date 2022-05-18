@@ -15,7 +15,6 @@ export const Router = () => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
   const intervalMS = 60 * 60 * 1000;
 
   useRegisterSW({
