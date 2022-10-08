@@ -2798,15 +2798,15 @@ eslint-config-prettier@^8.5.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.5.0.tgz#5a81680ec934beca02c7b1a61cf8ca34b66feab1"
   integrity sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==
 
-eslint-config-redlotus-base@0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/eslint-config-redlotus-base/-/eslint-config-redlotus-base-0.0.4.tgz#3a664c26b569e8ba226bb25062fabe36df82eff7"
-  integrity sha512-wbjKA3WctEDR1bYPjPV4+pk5mTnNKkNFAZF0tqiw5gOb2Ro2yKsjdpQa2NJEuGV0OTb0M6M7AMtagd2Du5wcDg==
+eslint-config-redlotus-base@latest:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/eslint-config-redlotus-base/-/eslint-config-redlotus-base-0.0.6.tgz#115b0300f68fac1b7b89b9375252b8be9cc7fff0"
+  integrity sha512-1CsWe1xwMPncXewgIVC6uPzRDdcCn6AzC6NyKa3OWCM1sEboPnHBXPQtLJEWGfwXnyLr8+yShIUUYKs8wheiMQ==
 
-eslint-config-redlotus-react@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/eslint-config-redlotus-react/-/eslint-config-redlotus-react-0.0.5.tgz#e89aadcc0c2133f421dc8a2b649151dd667edee3"
-  integrity sha512-q4Ol+G/Uwq/O3ZZ+32W71k8/kv8FJnqw0Z2Ef7dY1COI+sWxzqOWeE+VkMYvC2lyO3kQd0KetWTAT7sMGL+L1A==
+eslint-config-redlotus-react@latest:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/eslint-config-redlotus-react/-/eslint-config-redlotus-react-0.0.6.tgz#d2f99a4d4c4e4dd0b88e42756bd15cdac42f8575"
+  integrity sha512-343Uc3ItCRGCZUYBP+cYDdCuQiaEbBhoPiyoH1dXN7e9TGWf5N1tYIDeN9NM0fO5uxLguVsQE6AZIPL9+AdVvQ==
 
 eslint-import-resolver-node@^0.3.6:
   version "0.3.6"
