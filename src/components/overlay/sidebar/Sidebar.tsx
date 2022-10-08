@@ -1,6 +1,5 @@
-import { AnimatePresence } from "framer-motion";
-
 import clsx from "clsx";
+import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -33,7 +32,7 @@ export const Sidebar = () => {
 
   return (
     <AnimatePresence>
-      <AnimatePresence initial exitBeforeEnter>
+      <AnimatePresence initial mode="wait">
         {sidebarState === "openWithOverlay" && (
           <>
             <AnimationWrapper
