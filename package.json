@@ -10,7 +10,6 @@
     "preview": "vite preview",
     "prepare": "cd .. && husky install client/.husky",
     "lint:fix": "eslint --fix --ext .js,.ts,.tsx ./src --ignore-path .gitignore",
-    "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\"",
     "clean": "rm -rf node_modules/ && rm -rf yarn.lock && yarn && yarn start",
     "test": "vitest",
     "coverage": "vitest run --coverage"
@@ -77,7 +76,6 @@
     "vitest": "^0.24.0"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,md,graphql,a}": "yarn prettier",
     "*.{js,jsx,ts,tsx,md,graphql}": "yarn lint:fix"
   }
 }
