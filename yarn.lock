@@ -1341,10 +1341,10 @@
     "@react-hook/event" "^1.2.1"
     "@react-hook/throttle" "^2.2.0"
 
-"@redlotus/lotusui@^0.0.17":
-  version "0.0.17"
-  resolved "https://registry.yarnpkg.com/@redlotus/lotusui/-/lotusui-0.0.17.tgz#5b75d925b13062a48b1fdb49d717b8b54a78dc5d"
-  integrity sha512-UJQK8Y8Koez9XzB5yIe6RYYVUEndnDVTqg2AydsBGeqx2RmTnIraOSgRCm/R/ApmhPksVGpV/J7EZu6snFyh0w==
+"@redlotus/lotusui@^0.0.22":
+  version "0.0.22"
+  resolved "https://registry.yarnpkg.com/@redlotus/lotusui/-/lotusui-0.0.22.tgz#5c3cebf53860383af3a344c73aa9aeb67f6986b4"
+  integrity sha512-c+BcNgPKt2wp18izo+BidBKvJe8mAxX5l9hfU6my1+3rG++rhdnyabCHwN1QlXlsMH+/KnJg58z5y74gZnnWOg==
   dependencies:
     "@emotion/react" "^11.10.4"
     "@emotion/styled" "^11.10.4"
