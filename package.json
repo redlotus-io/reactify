@@ -19,7 +19,7 @@
     "@emotion/styled": "^11.10.4",
     "@headlessui/react": "^1.7.3",
     "@react-hook/window-size": "^3.1.1",
-    "@redlotus/lotusui": "^0.0.12",
+    "@redlotus/lotusui": "^0.0.17",
     "clsx": "^1.2.1",
     "daisyui": "^2.31.0",
     "date-fns": "^2.29.3",
