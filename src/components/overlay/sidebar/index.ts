@@ -1,2 +1,2 @@
-export * from "./Sidebar";
-export * from "./components";
+export * from "./ExpandedSidebarContent";
+export * from "./SmallSidebarContent";

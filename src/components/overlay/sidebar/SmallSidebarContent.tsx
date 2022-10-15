@@ -1,8 +1,6 @@
+import { AnimationWrapper, animations, SidebarIconLink, useSidebar } from "@redlotus/ui";
 import clsx from "clsx";
 import { HiMenu, HiHome } from "react-icons/all";
-
-import { AnimationWrapper, animations, SidebarIconLink } from "components";
-import { useSidebar } from "context";
 
 export const SmallSidebarContent = () => {
   const { setSidebarState } = useSidebar();

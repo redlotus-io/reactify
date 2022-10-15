@@ -20,15 +20,13 @@ input[type="number"] {
   p {
     @apply text-gray-800;
   }
+
   span {
     @apply text-gray-800;
   }
 }
 
 @layer components {
-  .sidebar-link {
-    @apply mr-3 w-8 h-8 fill-gray-800;
-  }
 
   /* IE and Edge */
   .no-scrollbar {
@@ -39,9 +37,11 @@ input[type="number"] {
     /* @apply scrollbar-none no-scrollbar scrollbar-thumb-slate-500 scrollbar-track-gray-100 active:scrollbar-thumb-slate-600; */
     @apply scrollbar-hide;
   }
+
   .input-error {
-    @apply border-2 border-red-300 caret-red-400 focus:outline-none focus:border-red-500;
+    @apply border-2 border-red-300 caret-red-400 focus: outline-none focus:border-red-500;
   }
+
   .gradient-border-example {
     @apply border-4 border-transparent border-solid border-gradient-br-light-green-white;
   }

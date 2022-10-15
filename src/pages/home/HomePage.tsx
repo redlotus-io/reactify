@@ -1,9 +1,9 @@
-import { DefaultWrapper } from "components/layouts";
+import { DefaultPageWrapper } from "components";
 
 export const HomePage = () => {
   return (
-    <DefaultWrapper>
-      <div></div>
-    </DefaultWrapper>
+    <DefaultPageWrapper RightSide={<div></div>}>
+      <div>Home</div>
+    </DefaultPageWrapper>
   );
 };

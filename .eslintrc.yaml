@@ -1,2 +1,2 @@
 extends:
-  - eslint-config-redlotus-react/main
+  - eslint-config-redlotus-react/dist/main
