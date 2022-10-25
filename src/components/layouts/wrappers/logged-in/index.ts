@@ -1,1 +1,1 @@
-export * from "./DefaultWrapper";
+export * from "./DefaultPageWrapper";
