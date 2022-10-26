@@ -1546,6 +1546,11 @@
     "@react-hook/event" "^1.2.1"
     "@react-hook/throttle" "^2.2.0"
 
+"@redlotus/typescript-config@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@redlotus/typescript-config/-/typescript-config-1.0.0.tgz#ba044f6143685b7400be36f1af0e5ea7ae45631b"
+  integrity sha512-Kg0V4Gw9lordd4oEic0A5Nos5inr7dFXXGujAuJKk756cRLL/UfoB4TOjuhR+hSuyxzbbx/XZ7b4GqRxSYMi5g==
+
 "@redlotus/ui@^0.0.1":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@redlotus/ui/-/ui-0.0.1.tgz#80aa556d57c13a98dd667a5c0e3a6696a82f2182"
@@ -9128,11 +9133,6 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==
-
-typescript-config-redlotus@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/typescript-config-redlotus/-/typescript-config-redlotus-0.0.1.tgz#bcc055c9eba5b82df1b5e1414a6908f0c104ba69"
-  integrity sha512-wwMMDdD6IKcojTvuhmDyQ6MUHg6CUWd44g3BagvFSDvQUGgRL3knKNhfMwYVnQBRQBkZP7yn2MJAUAYRIOAcyQ==
 
 typescript@^4.8.4:
   version "4.8.4"
