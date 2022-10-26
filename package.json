@@ -9,7 +9,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint:fix": "eslint --fix --ext .js,.ts,.tsx ./src --ignore-path .gitignore",
-    "clean": "rm -rf node_modules/ && rm -rf yarn.lock && yarn && yarn start",
+    "clean": "rm -rf node_modules/ && rm -rf yarn.lock && yarn",
     "test": "vitest",
     "coverage": "vitest run --coverage"
   },
