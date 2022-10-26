@@ -30,6 +30,66 @@ Ensure you have the latest LTS version of Node.js installed
 `yarn start` or `yarn dev`
 
 ---
+# 📦 Converting project to reactify standards
+
+- Copy everything from `tsconfig.json` to your project's `tsconfig.json`
+- 
+- Add .eslintrc.yaml file
+```bash
+extends:
+  - eslint-config-redlotus-react/dist/main
+```
+
+- Copy .prettierignore and .eslintignore
+
+- Copy next line from tailwind.config.js
+
+    `content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],`
+
+- Also there may be other things that you need to copy from tailwind.config.js
+
+- Remove prepare script
+
+- Remove following packages
+  - These come from @redlotus/ui
+    - @emotion/react
+    - @emotion/styled
+    - @headlessui/react
+    - @react-hook/window-size
+    - clsx
+    - daisyui
+    - date-fns
+    - formik
+    - framer-motion
+    - react-icons
+  - These come from eslint-config-redlotus-react
+    - @typescript-eslint/eslint-plugin
+    - @typescript-eslint/parser
+    - eslint
+    - eslint-config-prettier
+    - eslint-config-redlotus-base
+    - eslint-config-redlotus-react
+    - eslint-import-resolver-typescript
+    - eslint-plugin-import
+    - eslint-plugin-jest-dom
+    - eslint-plugin-jsx-a11y
+    - eslint-plugin-react
+    - eslint-plugin-react-hooks
+    - eslint-plugin-tailwindcss
+    - eslint-plugin-testing-library
+    - prettier
+
+`yarn remove @emotion/react @emotion/styled @headlessui/react @react-hook/window-size clsx daisyui date-fns formik framer-motion react-icons @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-config-redlotus-base eslint-config-redlotus-react eslint-import-resolver-typescript eslint-plugin-import eslint-plugin-jest-dom eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-tailwindcss eslint-plugin-testing-library prettier`
+
+`yarn add @redlotus/ui`
+`yarn add -D @redlotus/typescript-config eslint-config-redlotus-react`
+
+Remove from src folder:
+- useIsMobile hook
+- SidebarContext
+- Most of the components
+
+---
 
 ## License
 
