@@ -1619,9 +1619,9 @@
     picomatch "^2.2.2"
 
 "@sinclair/typebox@^0.24.1":
-  version "0.24.50"
-  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.24.50.tgz#35ee4db4ab8f3a8ff56490c51f92445d2776451e"
-  integrity sha512-k8ETQOOQDg5FtK7y9KJWpsGLik+QlPmIi8zzl/dGUgshV2QitprkFlCR/AemjWOTyKn9UwSSGRTzLVotvgCjYQ==
+  version "0.24.51"
+  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.24.51.tgz#645f33fe4e02defe26f2f5c0410e1c094eac7f5f"
+  integrity sha512-1P1OROm/rdubP5aFDSZQILU0vrLCJ4fvHt6EoqHEM+2D/G5MK3bIaymUKLit8Js9gbns5UyJnkP/TZROLw4tUA==
 
 "@storybook/addons@6.5.13":
   version "6.5.13"
@@ -2072,9 +2072,9 @@
     "@types/react" "*"
 
 "@types/react@*", "@types/react@^18.0.21":
-  version "18.0.22"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.22.tgz#97782d995d999617de116cf61f437f1351036fc7"
-  integrity sha512-4yWc5PyCkZN8ke8K9rQHkTXxHIWHxLzzW6RI1kXVoepkD3vULpKzC2sDtAMKn78h92BRYuzf+7b/ms7ajE6hFw==
+  version "18.0.23"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.23.tgz#4190ecd58b99fa79fe2e67832bdcb287e5f893e4"
+  integrity sha512-R1wTULtCiJkudAN2DJGoYYySbGtOdzZyUWAACYinKdiQC8auxso4kLDUhQ7AJ2kh3F6A6z4v69U6tNY39hihVQ==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -4292,10 +4292,10 @@ eslint-config-prettier@>=8.5.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.5.0.tgz#5a81680ec934beca02c7b1a61cf8ca34b66feab1"
   integrity sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==
 
-eslint-config-redlotus-base@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-redlotus-base/-/eslint-config-redlotus-base-0.1.1.tgz#66dea0b99248057af9097065042b2b97e5dfb20b"
-  integrity sha512-iZB6NB+dMMyaWBIhIw8Kd/Pc9/kjuwDKMz5UGuwFR9ok2nD3HZ2i+K67e+ENlIS2vKw7gwhpAixuDSluFV+Zfw==
+eslint-config-redlotus-base@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/eslint-config-redlotus-base/-/eslint-config-redlotus-base-0.1.5.tgz#e36ecfdb9aa246754ba9fb4f037f7525e8c65829"
+  integrity sha512-HWKTkNrQ4UVbmdcUwqOYQrRcxb+9x/gFuKhe0HUSUms2C8MLi1huvAB0SvjQGnitzCuL6ir/kJGrONIzShiFoA==
   dependencies:
     "@typescript-eslint/eslint-plugin" ">=5.39.0"
     "@typescript-eslint/parser" ">=5.39.0"
@@ -4306,18 +4306,19 @@ eslint-config-redlotus-base@^0.1.1:
     eslint-plugin-jest-dom ">=4.0.2"
     eslint-plugin-jsx-a11y ">=6.6.1"
     eslint-plugin-prettier ">=4.2.1"
-    eslint-plugin-tailwindcss "^3.6.2"
     eslint-plugin-testing-library ">=5.7.2"
     prettier ">=2.7.1"
 
-eslint-config-redlotus-react@0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/eslint-config-redlotus-react/-/eslint-config-redlotus-react-0.1.2.tgz#cf318559f985c77228e17dac5195cb191bfcf800"
-  integrity sha512-2xmFx4ALNTWYreCEye89sEX8LJMtA3nJDcmqhuV5c7Jxte2nXiMdjclXnqaqWdGPdMb8L2FgLcnCwfdC6zNrmg==
+eslint-config-redlotus-react@0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/eslint-config-redlotus-react/-/eslint-config-redlotus-react-0.1.5.tgz#f47cf5625c3f65f03fc87b2cff56c2b8ac6c7c4e"
+  integrity sha512-yolQd1+UNt8kOBghh4Yx7gBupBBdkveYse4BwWfTSum/qLSbCdAib64KPqarWSV8Mo6qaBBRHFxsBSkENY+Gog==
   dependencies:
-    eslint-config-redlotus-base "^0.1.1"
+    eslint-config-redlotus-base "^0.1.5"
+    eslint-plugin-prettier ">=4.2.1"
     eslint-plugin-react ">=7.31.8"
     eslint-plugin-react-hooks ">=4.6.0"
+    eslint-plugin-tailwindcss ">=3.6.2"
 
 eslint-import-resolver-node@^0.3.6:
   version "0.3.6"
@@ -4394,7 +4395,7 @@ eslint-plugin-jsx-a11y@>=6.6.1:
     minimatch "^3.1.2"
     semver "^6.3.0"
 
-eslint-plugin-prettier@>=4.2.1, eslint-plugin-prettier@^4.2.1:
+eslint-plugin-prettier@>=4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-4.2.1.tgz#651cbb88b1dab98bfd42f017a12fa6b2d993f94b"
   integrity sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==
@@ -4426,7 +4427,7 @@ eslint-plugin-react@>=7.31.8:
     semver "^6.3.0"
     string.prototype.matchall "^4.0.7"
 
-eslint-plugin-tailwindcss@^3.6.2:
+eslint-plugin-tailwindcss@>=3.6.2:
   version "3.6.2"
   resolved "https://registry.yarnpkg.com/eslint-plugin-tailwindcss/-/eslint-plugin-tailwindcss-3.6.2.tgz#56ce5722b2972ed45cb4c0bc7062d37b0cfd4995"
   integrity sha512-C9Ka3w6W9F5l/3ZDLnkdbqmeujc1vE+p5drjP1Z1UyxgoE1Nh4/f8oQ4XC45PrZsS0Nyv0YKXNH8/dn/FJZKsQ==
