@@ -33,15 +33,16 @@ Ensure you have the latest LTS version of Node.js installed
 # 📦 Converting project to reactify standards
 
 - Copy everything from `tsconfig.json` to your project's `tsconfig.json`
-- 
+  - Remove tsconfig.node.json
 - Add .eslintrc.yaml file
 ```bash
 extends:
   - eslint-config-redlotus-react/dist/main
 ```
-
+- Remove old eslintrc and prettierrc files
 - Copy .prettierignore and .eslintignore
-- Add npx lint-staged to husky pre-commit
+
+- Add `npx lint-staged` to husky pre-commit
 - Add this to your package.json
 ```bash
   "lint-staged": {
@@ -50,7 +51,7 @@ extends:
 ```
 - Add these scripts to package.json
   -  `"lint:fix": "eslint --fix --ext .js,.ts,.tsx ./src --ignore-path .gitignore",`
-  -  `"clean": "rm -rf node_modules/ && rm -rf yarn.lock && yarn && yarn start",`
+  -  `"clean": "rm -rf node_modules/ && rm -rf yarn.lock && yarn",`
 
 
 - Copy next line from tailwind.config.js
@@ -59,7 +60,7 @@ extends:
 
 - Also there may be other things that you need to copy from tailwind.config.js
 
-- Remove prepare script
+- Remove `prepare` and `prettier` script
 
 - Remove following packages
   - These come from @redlotus/ui
@@ -68,7 +69,6 @@ extends:
     - @headlessui/react
     - @react-hook/window-size
     - clsx
-    - daisyui
     - date-fns
     - formik
     - framer-motion
@@ -78,8 +78,6 @@ extends:
     - @typescript-eslint/parser
     - eslint
     - eslint-config-prettier
-    - eslint-config-redlotus-base
-    - eslint-config-redlotus-react
     - eslint-import-resolver-typescript
     - eslint-plugin-import
     - eslint-plugin-jest-dom
@@ -90,10 +88,40 @@ extends:
     - eslint-plugin-testing-library
     - prettier
 
-`yarn remove @emotion/react @emotion/styled @headlessui/react @react-hook/window-size clsx daisyui date-fns formik framer-motion react-icons @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-config-redlotus-base eslint-config-redlotus-react eslint-import-resolver-typescript eslint-plugin-import eslint-plugin-jest-dom eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-tailwindcss eslint-plugin-testing-library prettier`
+`yarn remove @emotion/react @emotion/styled @headlessui/react @react-hook/window-size clsx`
+
+`yarn remove date-fns`
+
+`yarn remove formik framer-motion react-icons`
+
+`yarn remove @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-import-resolver-typescript eslint-plugin-import eslint-plugin-jest-dom eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-tailwindcss eslint-plugin-testing-library prettier`
 
 `yarn add @redlotus/ui`
-`yarn add -D @redlotus/typescript-config eslint-config-redlotus-react`
+`yarn add -D @redlotus/typescript-config eslint-config-redlotus-react lint-staged`
+
+run `yarn clean` to make sure there are no missing packages
+
+Just incase copy vite.config.ts from this project to your project and check if there are major changes
+
+Make sure the project runs
+
+Fix eslint errors by running `yarn lint:fix`
+
+!!Update packages
+
+Add from src/types/pwa.d.ts to your project
+
+### If everything works, then proceed with next steps
+
+You can now start implementing @redlotus/ui
+
+Add the following to your `main.tsx` file:
+
+```bash
+import "@redlotus/ui/dist/style.css";
+```
+
+Remove moment and replace it with date-fns
 
 Remove from src folder:
 - useIsMobile hook
