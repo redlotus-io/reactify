@@ -1,13 +1,6 @@
-import {
-  NavbarBottom,
-  NavbarTop,
-  PartialPageWrapper,
-  Sidebar,
-} from "@redlotus/ui";
+import { NavbarBottom, NavbarTop, PartialPageWrapper, Sidebar } from "@redlotus/ui";
 
-import {  ExpandedSidebarContent,
-  NavbarBottomContent,
-  SmallSidebarContent} from "components"
+import { ExpandedSidebarContent, NavbarBottomContent, SmallSidebarContent } from "components";
 
 interface Props {
   children: React.ReactNode;
