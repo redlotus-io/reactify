@@ -41,6 +41,17 @@ extends:
 ```
 
 - Copy .prettierignore and .eslintignore
+- Add npx lint-staged to husky pre-commit
+- Add this to your package.json
+```bash
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,md,graphql}": "yarn lint:fix"
+  }
+```
+- Add these scripts to package.json
+  -  `"lint:fix": "eslint --fix --ext .js,.ts,.tsx ./src --ignore-path .gitignore",`
+  -  `"clean": "rm -rf node_modules/ && rm -rf yarn.lock && yarn && yarn start",`
+
 
 - Copy next line from tailwind.config.js
 
