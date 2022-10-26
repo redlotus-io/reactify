@@ -1,7 +1,7 @@
 ![RedLotus-Logo-Dark](.github/base-logo-dark-mode.svg#gh-dark-mode-only)
 ![RedLotus-Logo-Light](.github/base-logo-light-mode.svg#gh-light-mode-only)
 
-Get started with apollo-graphql server. **Get a super boost to your development** 🚀
+Get started with React and tailwind. **Get a super boost to your development** 🚀
 
 ## 📖 Documentation
 This boilerplate has all the tooling configured (eslint, prettier, husky, lint-staged, typescript and testing)
