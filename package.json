@@ -22,7 +22,7 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
-    "@redlotus/typescript-config": "^1.0.0",
+    "@redlotus/tsconfig": "^1.0.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/react-hooks": "^8.0.1",

@@ -1,5 +1,5 @@
 {
-  "extends": "@redlotus/typescript-config/react/tsconfig.json",
+  "extends": "@redlotus/tsconfig/react/tsconfig.json",
   "compilerOptions": {
     "baseUrl": "src"
   },
