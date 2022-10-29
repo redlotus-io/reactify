@@ -121,6 +121,8 @@ Add the following to your `main.tsx` file:
 import "@redlotus/ui/dist/style.css";
 ```
 
+Move routing to routes.tsx Find example [here](https://github.com/redlotus-io/ui/blob/main/src/routes/routes.tsx)
+
 Remove moment and replace it with date-fns
 
 Remove from src folder:
