@@ -6,20 +6,12 @@ export const NavbarBottomContent = () => {
   return (
     <>
       <Link to="/">
-        <AnimationWrapper
-          variants={animations.smallScale}
-          animateOnAllScreens
-          keyIndex="nb-home-icon"
-        >
+        <AnimationWrapper variants={animations.smallScale} key="nb-home-icon">
           <HiHome className="h-14 w-14 cursor-pointer fill-slate-700 hover:fill-slate-800" />
         </AnimationWrapper>
       </Link>
       <Link to="/stats">
-        <AnimationWrapper
-          variants={animations.smallScale}
-          animateOnAllScreens
-          keyIndex="nb-chart-icon"
-        >
+        <AnimationWrapper variants={animations.smallScale} key="nb-chart-icon">
           <HiChartBar className="h-14 w-14 cursor-pointer fill-slate-700 hover:fill-slate-800" />
         </AnimationWrapper>
       </Link>
