@@ -2068,10 +2068,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-dom@^18.0.8":
-  version "18.0.8"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.0.8.tgz#d2606d855186cd42cc1b11e63a71c39525441685"
-  integrity sha512-C3GYO0HLaOkk9dDAz3Dl4sbe4AKUGTCfFIZsz3n/82dPNN8Du533HzKatDxeUYWu24wJgMP1xICqkWk1YOLOIw==
+"@types/react-dom@^18.0.9":
+  version "18.0.9"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.0.9.tgz#ffee5e4bfc2a2f8774b15496474f8e7fe8d0b504"
+  integrity sha512-qnVvHxASt/H7i+XG1U1xMiY5t+IHcPGUK7TDMDzom08xa7e86eCeKOiLZezwCKVxJn6NEiiy2ekgX8aQssjIKg==
   dependencies:
     "@types/react" "*"
 
@@ -9195,10 +9195,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==
 
-typescript@^4.8.4:
-  version "4.8.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.8.4.tgz#c464abca159669597be5f96b8943500b238e60e6"
-  integrity sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==
+typescript@^4.9.3:
+  version "4.9.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.3.tgz#3aea307c1746b8c384435d8ac36b8a2e580d85db"
+  integrity sha512-CIfGzTelbKNEnLpLdGFgdyKhG23CKdKgQPOBc+OUNrkJ2vr+KSzsSV5kq5iWhEQbok+quxgGzrAtGWCyU7tHnA==
 
 uglify-js@^3.1.4:
   version "3.17.4"
@@ -9538,10 +9538,10 @@ vite@^3.0.0:
   optionalDependencies:
     fsevents "~2.3.2"
 
-vite@^3.2.3:
-  version "3.2.3"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-3.2.3.tgz#7a68d9ef73eff7ee6dc0718ad3507adfc86944a7"
-  integrity sha512-h8jl1TZ76eGs3o2dIBSsvXDLb1m/Ec1iej8ZMdz+PsaFUsftZeWe2CZOI3qogEsMNaywc17gu0q6cQDzh/weCQ==
+vite@^3.2.4:
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-3.2.4.tgz#d8c7892dd4268064e04fffbe7d866207dd24166e"
+  integrity sha512-Z2X6SRAffOUYTa+sLy3NQ7nlHFU100xwanq1WDwqaiFiCe+25zdxP1TfCS5ojPV2oDDcXudHIoPnI1Z/66B7Yw==
   dependencies:
     esbuild "^0.15.9"
     postcss "^8.4.18"
@@ -9550,10 +9550,10 @@ vite@^3.2.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
-vitest@^0.25.1:
-  version "0.25.1"
-  resolved "https://registry.yarnpkg.com/vitest/-/vitest-0.25.1.tgz#4eafca68fabab22b6099451ab3fcaac33290a4ed"
-  integrity sha512-eH74h6MkuEgsqR4mAQZeMK9O0PROiKY+i+1GMz/fBi5A3L2ml5U7JQs7LfPU7+uWUziZyLHagl+rkyfR8SLhlA==
+vitest@^0.25.2:
+  version "0.25.2"
+  resolved "https://registry.yarnpkg.com/vitest/-/vitest-0.25.2.tgz#b8afd2ad4ea3c759f383792b5c3a2998ceb15fcc"
+  integrity sha512-qqkzfzglEFbQY7IGkgSJkdOhoqHjwAao/OrphnHboeYHC5JzsVFoLCaB2lnAy8krhj7sbrFTVRApzpkTOeuDWQ==
   dependencies:
     "@types/chai" "^4.3.3"
     "@types/chai-subset" "^1.3.3"
