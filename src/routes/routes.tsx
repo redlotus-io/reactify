@@ -1,6 +1,6 @@
 import { Router } from "@redlotus/ui";
 import clsx from "clsx";
-import { HiArchive, HiHome } from "react-icons/all";
+import { HiArchive, HiHome } from "react-icons/hi";
 
 import { AboutPage, HomePage } from "pages";
 

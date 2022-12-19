@@ -130,6 +130,15 @@ Remove from src folder:
 - SidebarContext
 - Most of the components
 
+## To add threejs
+
+`yarn add three @react-three/fiber @react-three/drei`
+`yarn add -D r3f-perf @react-three/editor @types/three`
+
+In vite.config.ts
+`// import { r3f } from "@react-three/editor/vite";`
+add `// r3f(),` above `react(),`, if you want to use @react-three/editor
+
 ---
 
 ## License

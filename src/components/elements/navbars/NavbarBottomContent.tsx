@@ -1,5 +1,5 @@
 import { animations, AnimationWrapper } from "@redlotus/ui";
-import { HiChartBar, HiHome } from "react-icons/all";
+import { HiChartBar, HiHome } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 export const NavbarBottomContent = () => {
