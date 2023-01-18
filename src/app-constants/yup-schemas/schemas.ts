@@ -1,3 +1,5 @@
-import * as Yup from "yup";
+import { object } from "yup";
 
-export const ExampleYupSchema = Yup.object().shape({});
+const Example = object().shape({});
+
+export const YupSchemas = { Example };

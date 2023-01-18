@@ -1,48 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
 @layer base {
   p {
-    @apply text-gray-800;
+    @apply text-[#393939] font-catamaran;
+  }
+
+  h1 {
+    @apply text-[#393939] font-catamaran;
   }
 
   span {
-    @apply text-gray-800;
+    @apply text-[#393939];
+  }
+  b {
+    @apply text-[#393939];
+  }
+
+  li {
+    @apply text-stone-600;
+  }
+  button {
+    @apply text-[#393939];
   }
 }
 
 @layer components {
-
-  /* IE and Edge */
-  .no-scrollbar {
-    -ms-overflow-style: none;
-  }
-
-  .scrollbar-styles {
-    /* @apply scrollbar-none no-scrollbar scrollbar-thumb-slate-500 scrollbar-track-gray-100 active:scrollbar-thumb-slate-600; */
-    @apply scrollbar-hide;
-  }
-
-  .input-error {
-    @apply border-2 border-red-300 caret-red-400 focus: outline-none focus:border-red-500;
-  }
-
-  .gradient-border-example {
-    @apply border-4 border-transparent border-solid border-gradient-br-light-green-white;
-  }
+ .remove-ring {
+    @apply focus:ring-0 ring-white ring-opacity-0 ring-offset-2 ring-offset-transparent focus:outline-none;
+ }
 }

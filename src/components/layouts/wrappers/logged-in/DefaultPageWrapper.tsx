@@ -8,7 +8,7 @@ import {
 } from "@redlotus/ui";
 
 import { NavbarBottomContent } from "components";
-import { routes } from "routes";
+import { routesWithSidebar } from "routes";
 
 interface Props {
   children: React.ReactNode;
@@ -38,10 +38,10 @@ export const DefaultPageWrapper = ({ children, RightSide }: Props) => {
         <Sidebar
           ExpandedSidebarContent={
             <ExpandedSidebarContent
-              routes={routes}
+              routes={routesWithSidebar}
               appLogo={appLogo}
               BottomContent={
-                <div className="flex flex-row items-center space-x-3 px-4">
+                <div className="flex flex-row items-center px-4 space-x-3">
                   <img className="h-14 w-14" alt="user" src={avatar} />
                   <p className="text-xl font-semibold">{username}</p>
                 </div>
@@ -50,7 +50,7 @@ export const DefaultPageWrapper = ({ children, RightSide }: Props) => {
           }
           SmallSidebarContent={
             <SmallSidebarContent
-              routes={routes}
+              routes={routesWithSidebar}
               appLogo={appLogo}
               BottomContent={<img className="h-14 w-14" alt="avatar" src={avatar} />}
             />
