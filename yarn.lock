@@ -1763,10 +1763,10 @@
   resolved "https://registry.yarnpkg.com/@redlotus/tsconfig/-/tsconfig-1.0.1.tgz#192180bd4ccbe2053cc592c51c32a7d95a308d23"
   integrity sha512-9lJSvNEsZO0wOj/IVOXquj5hvpt/dUmIwUBcq2bgiYysWmC8w+9LRlv6R9xnKFyH3MNlJc4ks223/8eEKsaomA==
 
-"@redlotus/ui@^0.1.51":
-  version "0.1.51"
-  resolved "https://registry.yarnpkg.com/@redlotus/ui/-/ui-0.1.51.tgz#cfd3f3101175fa5569f993b3bc5397cc3e4769e8"
-  integrity sha512-Q67z1gc+sg4B30y3VphP6le6yEZO7Qay9ZPxHLk04AeDGvIv9+IeMdN2KwFrX0VOmCQC+s7XTljy062Rx09JKA==
+"@redlotus/ui@^0.1.52":
+  version "0.1.52"
+  resolved "https://registry.yarnpkg.com/@redlotus/ui/-/ui-0.1.52.tgz#8a3424bcdeb8f3a82bb58ef47c8480faaed89e9b"
+  integrity sha512-5ooxomFQLN4Jb9oh+P8m0vzBgpJU/tElCnfE2MpnF2CnExNljzk9gurY2d7rIBUubHZ7JZGrPQ4Qa1pfBTpTrA==
   dependencies:
     "@emotion/react" "^11.10.5"
     "@emotion/styled" "^11.10.5"
@@ -4615,10 +4615,10 @@ eslint-config-redlotus-base@^0.1.5:
     eslint-plugin-testing-library ">=5.7.2"
     prettier ">=2.7.1"
 
-eslint-config-redlotus-react@0.1.5:
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/eslint-config-redlotus-react/-/eslint-config-redlotus-react-0.1.5.tgz#f47cf5625c3f65f03fc87b2cff56c2b8ac6c7c4e"
-  integrity sha512-yolQd1+UNt8kOBghh4Yx7gBupBBdkveYse4BwWfTSum/qLSbCdAib64KPqarWSV8Mo6qaBBRHFxsBSkENY+Gog==
+eslint-config-redlotus-react@0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/eslint-config-redlotus-react/-/eslint-config-redlotus-react-0.1.6.tgz#d8d0b2dd3d854dd81652ef6e6bf3aa4f82556054"
+  integrity sha512-OToMJ8X24U8EUVLYyDLunuRqmSYBIZzWGb8+wC6VONRt21VST9dnDNdr/UJ4/zwjLFBlDhK+ZsdqnqxqFnKroQ==
   dependencies:
     eslint-config-redlotus-base "^0.1.5"
     eslint-plugin-prettier ">=4.2.1"
