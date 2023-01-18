@@ -1,6 +1,8 @@
 import { useThemeUtils, useRegisterPWA } from "@redlotus/ui";
 import { Route, Routes } from "react-router-dom";
 
+import { ErrorPage } from "pages";
+
 import { routesWithSidebar, routes } from ".";
 
 export const Router = () => {
@@ -15,6 +17,7 @@ export const Router = () => {
       {routes.map(route => (
         <Route key={route.to} path={route.to} element={route.element} />
       ))}
+      <Route path="*" element={<ErrorPage />} />
     </Routes>
   );
 };
