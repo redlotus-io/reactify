@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply bg-surface-bg;
+  }
   p {
     @apply text-[#393939] font-catamaran;
   }

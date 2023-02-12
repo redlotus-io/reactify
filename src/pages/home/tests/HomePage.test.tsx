@@ -1,8 +1,8 @@
+import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import { describe, expect, it } from "vitest";
 
 import { HomePage } from "pages";
-import { render, screen } from "test/test-utils";
 
 describe("HomePage tests", () => {
   it("the title is visible", () => {
@@ -11,6 +11,9 @@ describe("HomePage tests", () => {
         <HomePage />
       </MemoryRouter>
     );
-    expect(screen.getByText(/Home/i)).toBeInTheDocument();
+
+    const welcomeText = screen.getByText(/Home/i);
+
+    expect(welcomeText).toBeInTheDocument();
   });
 });

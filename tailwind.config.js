@@ -1,7 +1,10 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable global-require */
+
 const colors = require("tailwindcss/colors");
 const defaultTheme = require('tailwindcss/defaultTheme')
 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}", "./node_modules/@redlotus/ui/dist/style.css"],
   // darkMode: "class",
@@ -80,6 +83,7 @@ module.exports = {
   plugins: [
     require("tailwind-scrollbar")({ nocompatible: true }),
     require("tailwind-scrollbar-hide"),
+    require("tailwindcss-animate"),
     require("tailwindcss-border-gradient-radius"),
   ],
 };
