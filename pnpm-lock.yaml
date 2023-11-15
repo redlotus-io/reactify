@@ -32,7 +32,7 @@ specifiers:
   react: ^18.2.0
   react-dom: ^18.2.0
   react-hot-toast: ^2.4.0
-  react-icons: 4.7.1
+  react-icons: 4.12.0
   react-router-dom: ^6.8.1
   tailwind-scrollbar: ^2.1.0
   tailwind-scrollbar-hide: ^1.1.7
@@ -52,7 +52,7 @@ dependencies:
   '@emotion/styled': 11.10.5_g6cddab2ma6w7rmdnelgn6dq2a
   '@headlessui/react': 1.7.10_biqbaboplfbrettd7655fr4n2y
   '@react-hook/window-size': 3.1.1_react@18.2.0
-  '@redlotus/ui': 0.1.60_t3rtoybix5hsqqdvgwd5ywh5va
+  '@redlotus/ui': 0.1.60_xmvuo5ysqr2j6ntsqrwhgxvkb4
   '@supabase/supabase-js': 2.7.1
   '@tanstack/react-query': 4.24.6_biqbaboplfbrettd7655fr4n2y
   clsx: 1.2.1
@@ -62,7 +62,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-hot-toast: 2.4.0_biqbaboplfbrettd7655fr4n2y
-  react-icons: 4.7.1_react@18.2.0
+  react-icons: 4.12.0_react@18.2.0
   react-router-dom: 6.8.1_biqbaboplfbrettd7655fr4n2y
   tailwindcss-animate: 1.0.5_tailwindcss@3.2.6
   tailwindcss-border-gradient-radius: 3.0.1
@@ -2152,7 +2152,7 @@ packages:
     resolution: {integrity: sha512-b+Yp8LFZt91+9H8xnpFQ1qhyXSaZLHDLrcmAbQPhST4k5xZnmKqryEpi0vIlBZQsVo8//fPDsNRUgFLuQtH8yQ==}
     dev: true
 
-  /@redlotus/ui/0.1.60_t3rtoybix5hsqqdvgwd5ywh5va:
+  /@redlotus/ui/0.1.60_xmvuo5ysqr2j6ntsqrwhgxvkb4:
     resolution: {integrity: sha512-E54DeI6vUVfBbQYMmOJ/BWVebRm+FI2jRRZEOHWrQRj6BFhUZ/UQ4VGNXGFq95nZ6IrLvJH5MNaET7zWkN5Cmw==}
     peerDependencies:
       '@emotion/react': '>=11.10.5'
@@ -2183,7 +2183,7 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-hotkeys-hook: 4.3.5_biqbaboplfbrettd7655fr4n2y
-      react-icons: 4.7.1_react@18.2.0
+      react-icons: 4.12.0_react@18.2.0
       react-router-dom: 6.8.1_biqbaboplfbrettd7655fr4n2y
       react-use-measure: 2.1.1_biqbaboplfbrettd7655fr4n2y
       tailwindcss: 3.2.6_postcss@8.4.21
@@ -5797,8 +5797,8 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /react-icons/4.7.1_react@18.2.0:
-    resolution: {integrity: sha512-yHd3oKGMgm7zxo3EA7H2n7vxSoiGmHk5t6Ou4bXsfcgWyhfDKMpyKfhHR6Bjnn63c+YXBLBPUql9H4wPJM6sXw==}
+  /react-icons/4.12.0_react@18.2.0:
+    resolution: {integrity: sha512-IBaDuHiShdZqmfc/TwHu6+d6k2ltNCf3AszxNmjJc1KUfXdEeRJOKyNvLmAHaarhzGmTSVygNdyu8/opXv2gaw==}
     peerDependencies:
       react: '*'
     dependencies:
