@@ -1,26 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 @layer base {
+  html {
+    @apply scrollbar-thumb-gray-300 hover:scrollbar-thumb-gray-400 scrollbar-track-transparent scrollbar-thin scrollbar-thumb-rounded-full;
+  }
   body {
     @apply bg-surface-bg;
   }
   p {
     @apply text-[#393939] font-catamaran;
   }
-
   h1 {
     @apply text-[#393939] font-catamaran;
   }
-
   span {
     @apply text-[#393939];
   }
   b {
     @apply text-[#393939];
   }
-
   li {
     @apply text-stone-600;
   }
@@ -30,7 +58,32 @@
 }
 
 @layer components {
- .remove-ring {
+  /* IE and Edge */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+  }
+
+  .input-error {
+    @apply border-2 border-red-300 outline-none caret-red-400 focus:border-red-500;
+  }
+
+  .scrollbar-overflow {
+    @apply overflow-scroll scrollbar-thumb-gray-300 hover:scrollbar-thumb-gray-400 scrollbar-track-transparent scrollbar-thin scrollbar-thumb-rounded-full;
+  }
+
+  .scrollbar-styles {
+    /* @apply scrollbar-none no-scrollbar scrollbar-thumb-slate-500 scrollbar-track-gray-100 active:scrollbar-thumb-slate-600; */
+    @apply scrollbar-hide;
+  }
+
+  .gradient-border-example {
+    @apply border-4 border-transparent border-solid border-gradient-br-light-green-white;
+  }
+
+  .scrollbar-hidden::-webkit-scrollbar {
+    @apply hidden
+  }
+   .remove-ring {
     @apply focus:ring-0 ring-white ring-opacity-0 ring-offset-2 ring-offset-transparent focus:outline-none;
- }
+  }
 }

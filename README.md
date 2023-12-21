@@ -63,16 +63,6 @@ extends:
 - Remove `prepare` and `prettier` script
 
 - Remove following packages
-  - These come from @redlotus/ui
-    - @emotion/react
-    - @emotion/styled
-    - @headlessui/react
-    - @react-hook/window-size
-    - clsx
-    - date-fns
-    - formik
-    - framer-motion
-    - react-icons
   - These come from eslint-config-redlotus-react
     - @typescript-eslint/eslint-plugin
     - @typescript-eslint/parser
@@ -96,7 +86,6 @@ extends:
 
 `yarn remove @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-import-resolver-typescript eslint-plugin-import eslint-plugin-jest-dom eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-tailwindcss eslint-plugin-testing-library prettier`
 
-`yarn add @redlotus/ui`
 `yarn add -D @redlotus/typescript-config eslint-config-redlotus-react lint-staged`
 
 run `yarn clean` to make sure there are no missing packages
@@ -112,14 +101,6 @@ Fix eslint errors by running `yarn lint:fix`
 Add from src/types/pwa.d.ts to your project
 
 ### If everything works, then proceed with next steps
-
-You can now start implementing @redlotus/ui
-
-Add the following to your `main.tsx` file:
-
-```bash
-import "@redlotus/ui/dist/style.css";
-```
 
 Move routing to routes.tsx Find example [here](https://github.com/redlotus-io/ui/blob/main/src/routes/routes.tsx)
 

@@ -1,11 +1,5 @@
-import { DefaultPageWrapper } from "components";
-
-export const AboutPage = () => {
-  return (
-    <DefaultPageWrapper>
-      <div className="flex w-full flex-col">
-        <div>About</div>
-      </div>
-    </DefaultPageWrapper>
-  );
-};
+export const AboutPage = () => (
+  <div className="flex flex-col w-full">
+    <div>About</div>
+  </div>
+);
