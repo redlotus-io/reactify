@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">reactify-vite</string>
+    <string name="title_activity_main">reactify-vite</string>
+    <string name="package_name">com.reactify.vite</string>
+    <string name="custom_url_scheme">com.reactify.vite</string>
+</resources>
