@@ -12,8 +12,8 @@
     "clean": "rm -rf node_modules/ && rm -rf yarn.lock && yarn",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "android": "npx cap add android",
-    "ios": "npx cap add ios",
+    "android:open": "npx cap open android",
+    "android:run": "npx cap run android",
     "sync": "npx cap sync"
   },
   "dependencies": {
