@@ -4,9 +4,9 @@ import { Route, Routes } from "react-router-dom";
 // eslint-disable-next-line import/no-unresolved
 import { useRegisterSW } from "virtual:pwa-register/react";
 
-import { ErrorPage } from "pages";
+import { ErrorPage } from "@/pages";
 
-import { routesWithSidebar, routes } from ".";
+import { routes } from ".";
 
 const useRegisterPWA = () => {
   const intervalMS = 60 * 60 * 1000; // 1 hour
@@ -37,12 +37,8 @@ const useThemeUtils = () => {
 export const Router = () => {
   useThemeUtils();
   useRegisterPWA();
-
   return (
     <Routes>
-      {routesWithSidebar.map(route => (
-        <Route path={route.to} element={route.element} />
-      ))}
       {routes.map(route => (
         <Route key={route.to} path={route.to} element={route.element} />
       ))}
