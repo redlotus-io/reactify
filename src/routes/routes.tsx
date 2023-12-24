@@ -1,4 +1,4 @@
-import { AboutPage, HomePage } from "@/pages";
+import { AboutPage, HomePage, LoginPage, RegisterPage } from "@/pages";
 import { IRegularRouter } from "@/types";
 
 export const definedRoutes = {
@@ -16,5 +16,13 @@ export const routes: IRegularRouter[] = [
   {
     to: definedRoutes.home,
     element: <HomePage />,
+  },
+  {
+    to: definedRoutes.login,
+    element: <LoginPage />,
+  },
+  {
+    to: definedRoutes.register,
+    element: <RegisterPage />,
   },
 ];
