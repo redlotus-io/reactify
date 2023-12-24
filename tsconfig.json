@@ -3,7 +3,7 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
-      "@/*": ["/*"]
+      "@/*": ["./*"]
     }
   },
   "include": ["src", "**/*.ts", "**/*.tsx", "vite.config.ts"],
