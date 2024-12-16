@@ -2,6 +2,7 @@
   "name": "reactify-vite",
   "private": true,
   "version": "0.0.1",
+  "type": "module",
   "module": "src/main.tsx",
   "scripts": {
     "start": "vite",

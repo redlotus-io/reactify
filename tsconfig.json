@@ -2,10 +2,7 @@
   "extends": "@redlotus/tsconfig/react/tsconfig.json",
   "compilerOptions": {
     "baseUrl": "./src",
-    "paths": {
-      "@/*": ["./*"]
-    }
   },
-  "include": ["src", "**/*.ts", "**/*.tsx", "vite.config.ts"],
+  "include": ["src", "**/*.ts", "**/*.tsx", "vite.config.mts"],
   "exclude": ["node_modules"]
 }
