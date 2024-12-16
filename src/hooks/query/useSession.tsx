@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 
-import { supabase } from "utils";
+import { supabase } from "../../utils/supabaseClient";
 
 export const useSession = () => {
   const getQuery = async () => {

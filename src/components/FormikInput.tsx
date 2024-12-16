@@ -3,8 +3,9 @@ import { VariantProps, cva } from "class-variance-authority";
 import { useField } from "formik";
 import { ReactNode, forwardRef } from "react";
 
-import { InputErrorText } from "@/components";
-import { cn } from "@/utils";
+import { cn } from "../utils/cn";
+
+import { InputErrorText } from "./InputErrorText";
 
 const formikInputVariants = cva(["placeholder:text-stone-500 relative placeholder:text-base"], {
   // regular --> hover --> active --> dark --> focus

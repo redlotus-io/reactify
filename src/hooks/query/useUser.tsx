@@ -1,9 +1,10 @@
 import { useQuery } from "@tanstack/react-query";
 import { toast } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import { UserType } from "../../types/types";
+import { supabase } from "../../utils/supabaseClient";
 
-import { UserType } from "@/types";
-import { supabase } from "@/utils";
+
 
 export const useUser = () => {
   const navigate = useNavigate();

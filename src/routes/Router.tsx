@@ -3,10 +3,8 @@ import { Route, Routes } from "react-router-dom";
 // @ts-ignore
 // eslint-disable-next-line import/no-unresolved
 import { useRegisterSW } from "virtual:pwa-register/react";
-
-import { ErrorPage } from "@/pages";
-
-import { routes } from ".";
+import { ErrorPage } from "../pages/ErrorPage";
+import { routes } from "./routes";
 
 const useRegisterPWA = () => {
   const intervalMS = 60 * 60 * 1000; // 1 hour

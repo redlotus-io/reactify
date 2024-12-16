@@ -1,3 +1,5 @@
+import { JSX } from "react";
+
 export interface ISidebarRouter {
   to: string;
   routeName: string;

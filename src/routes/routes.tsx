@@ -1,5 +1,8 @@
-import { AboutPage, HomePage, LoginPage, RegisterPage } from "@/pages";
-import { IRegularRouter } from "@/types";
+import { AboutPage } from "../pages/AboutPage";
+import { HomePage } from "../pages/HomePage";
+import { LoginPage } from "../pages/LoginPage";
+import { RegisterPage } from "../pages/RegisterPage";
+import { IRegularRouter } from "../types/types";
 
 export const definedRoutes = {
   home: "/",

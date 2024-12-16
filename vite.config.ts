@@ -9,12 +9,8 @@ import tsconfigPaths from "vite-tsconfig-paths";
 // https://vitejs.dev/config/
 
 export default defineConfig({
-  // resolve: {
-  //   alias: [{ find: "@", replacement: "src/" }],
-  // },
   plugins: [
     react(),
-    tsconfigPaths(),
     checker({ typescript: true }),
     VitePWA({
       registerType: "autoUpdate",

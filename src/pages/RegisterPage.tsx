@@ -1,10 +1,11 @@
 import { Form, Formik } from "formik";
 import { toast } from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
+import { YupSchemas } from "../app-constants/yup-schemas/schemas";
+import { FormikInput } from "../components/FormikInput";
+import { RealButton } from "../components/RealButton";
+import { supabase } from "../utils/supabaseClient";
 
-import { YupSchemas } from "@/app-constants";
-import { FormikInput, RealButton } from "@/components";
-import { supabase } from "@/utils";
 
 interface FormValues {
   username: string;

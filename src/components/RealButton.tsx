@@ -1,7 +1,7 @@
 import { VariantProps, cva } from "class-variance-authority";
 import { forwardRef } from "react";
 
-import { cn } from "@/utils";
+import { cn } from "../utils/cn";
 
 export const realButtonVariantColors = {
   red: ["text-white bg-primary border-[#b10000]", "active:border-primary"],
